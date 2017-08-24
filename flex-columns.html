@@ -13,3 +13,173 @@ padding:20px;margin-bottom:20px;margin-top:20px;flex-basis:30%;box-sizing:border
 
 
 #HTML Code for 3 columns
+<body>
+<!—Three column box start-->
+<div class="container">
+<div class="wrap">
+<h3>box1</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+</div>
+<div class="wrap">
+<h3>box2</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+<div class="wrap">
+<h3>box3</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+</div>
+<!—Three column box end-->
+</body>
+
+#CSS Code for Equal Height container
+<style>
+.equal-height-container {
+	max-width:1400px;
+	margin:0 auto; display:flex;
+}
+.first{
+	background-color:#F0F8FF;
+	padding:20px; flex:1;
+}
+
+.second{
+	background-color:yellow; flex:1; display:flex; flex-direction:column;
+}
+
+.second-a{
+	background-color:#FFB6C1; flex:1; padding:20px;
+}
+.second-b{
+	background-color:#cdf1c3;flex:1;padding:20px;
+}
+</style>
+
+#HTML Code for Equal Height Container
+<body>
+<!—Section Start-->
+<div class="equal-height-container">
+<div class="first">
+<h1>Heading</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+</div>
+<div class="second">
+<div class="second-a ">Column 1</div>
+<div class="second-b">Column 2</div>
+</div>
+</div>
+<!—Section End-->
+</body>
+
+#3) A Complete Responsive Flexbox Layout
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive layout Using Flexbox</title>
+<style>
+body{margin:0; background-color:#cccccc;font-family:arial; text-align:justify;}
+header{order:1; font-family:arial; display:flex; height:100px;max-width:1400px; margin:0 auto; background-color:#FFE4C4;}
+footer{ order:5; font-family:arial; display:flex;height:100px;max-width:1400px; margin:0 auto; background-color:#FFE4C4;}
+
+.container {
+	max-width:1400px; margin:0 auto;
+}
+.wrap{
+	padding:20px;margin-bottom:20px;margin-top:20px;flex-basis:30%;box-sizing:border-box;}
+.wrap:nth-child(1){background-color:#c0dbe2;}
+.wrap:nth-child(2){background-color:#cdf1c3;}
+.wrap:nth-child(3){background-color:#ccb9da;}
+
+.center-text{color:#000000; font-size:30px; margin:auto;}
+.equal-height-container {
+	max-width:1400px;
+	margin:0 auto; display:flex;
+}
+.first{
+	background-color:#F0F8FF;
+	padding:20px; flex:1;
+}
+
+.second{
+	background-color:yellow; flex:1; display:flex; flex-direction:column;
+}
+
+.second-a{
+	background-color:#FFB6C1; flex:1; padding:20px;
+}
+.second-b{
+	background-color:#cdf1c3;flex:1;padding:20px;
+}
+
+
+@media(min-width:900px)
+{
+	.container{
+	display:flex; justify-content:space-between;}
+
+}
+
+
+</style>
+</head>
+<body>
+<!—Header Start-->
+<header >
+<div class="center-text">Header</div>
+</header>
+<!—Header End-->
+
+<!—Section Start-->
+<div class="equal-height-container">
+
+<div class="first">
+<h1>Heading</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+</div>
+
+<div class="second">
+<div class="second-a ">Column 1</div>
+<div class="second-b">Column 2</div>
+
+</div>
+
+</div>
+<!—Section End-->
+
+
+
+<!—Three column box start-->
+<div class="container">
+<div class="wrap">
+<h3>box1</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+</div>
+
+<div class="wrap">
+<h3>box2</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</>
+
+</div>
+
+
+<div class="wrap">
+<h3>box3</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</>
+
+</div>
+
+
+
+
+
+</div>
+<!—Three column box end-->
+<!—Footer Start-->
+<footer ><div class="center-text">Footer</div></footer>
+<!—Footer end-->
+</body>
+</html>
